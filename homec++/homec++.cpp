@@ -7,7 +7,7 @@ double fraction(double x) // 1
     return x - y;
 }
 
-int abss(double x) // 2
+int abss(int x) // 2
 {
     return (x < 0) ? -x : x;
 }
@@ -100,7 +100,7 @@ int main() {
     break;
     case 2:
     {
-        std::cout << abss(x);
+        std::cout << abss(static_cast<int>(x));
     }
     break;
     case 3:
